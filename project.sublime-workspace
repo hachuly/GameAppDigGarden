@@ -1,0 +1,661 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ga",
+				"GameObject\tGameObject"
+			],
+			[
+				"is",
+				"isPickaxe\tisPickaxeUI"
+			],
+			[
+				"unity",
+				"UnityEngine\tUnityEngine"
+			],
+			[
+				"ra",
+				"ray_position\tVector2"
+			],
+			[
+				"ve",
+				"Vector2\tVector2"
+			],
+			[
+				"ray",
+				"Raycast(Vector2 origin, Vector2 direction)\tRaycastHit2D"
+			],
+			[
+				"rayca",
+				"RaycastHit2D\tRaycastHit2D"
+			],
+			[
+				"c",
+				"collider\tCollider2D { get; }"
+			],
+			[
+				"log",
+				"Log(object message)\tvoid"
+			],
+			[
+				"Phy",
+				"Physics2D\tPhysics2D"
+			],
+			[
+				"Raycast",
+				"RaycastHit2D\tRaycastHit2D"
+			],
+			[
+				"came",
+				"Camera\tCamera"
+			],
+			[
+				"C",
+				"Collision2D\tCollision2D"
+			],
+			[
+				"Coll",
+				"Collision2D\tCollision2D"
+			],
+			[
+				"game",
+				"gameObject\tGameObject { get; }"
+			],
+			[
+				"p",
+				"private\tprivate"
+			],
+			[
+				"in",
+				"identity\tQuaternion { get; }"
+			],
+			[
+				"Hu",
+				"HummerController\tHummerController"
+			],
+			[
+				"mouse",
+				"mouse_position\tVector2"
+			],
+			[
+				"get",
+				"GetComponent<T>()\tT"
+			],
+			[
+				"Colli",
+				"Collider2D\tCollider2D"
+			],
+			[
+				"Co",
+				"Collision2D\tCollision2D"
+			],
+			[
+				"instati",
+				"Instantiate(Object original)\tObject"
+			],
+			[
+				"o",
+				"Obj_sand\tGameObject"
+			],
+			[
+				"lo",
+				"Log(object message)\tvoid"
+			],
+			[
+				"De",
+				"Debug\tDebug"
+			],
+			[
+				"setr",
+				"SetTrigger(string name)\tvoid"
+			],
+			[
+				"getmouse",
+				"GetMouseButtonDown(int button)\tbool"
+			],
+			[
+				"SetTex",
+				"SetTextureOffset(string propertyName, Vector2 offset)\tvoid"
+			],
+			[
+				"f",
+				"float\tfloat"
+			],
+			[
+				"Destroy",
+				"Destroy(Object obj)\tvoid"
+			],
+			[
+				"gameObject",
+				"GameObject\tGameObject"
+			],
+			[
+				"shot",
+				"shotDelay\tfloat"
+			],
+			[
+				"Getchi",
+				"GetChildCount()\tint"
+			],
+			[
+				"IE",
+				"IEnumerator\tIEnumerator"
+			],
+			[
+				"Getc",
+				"GetComponent<T>()\tT"
+			],
+			[
+				"Spa",
+				"Spaceship\tSpaceship"
+			],
+			[
+				"s",
+				"spaceship\tSpaceship"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Assets/Script/MousePositionManager.cs",
+			"settings":
+			{
+				"buffer_size": 1872,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Unity/Study_GoForwardUnityChan/Assets/UIController.cs",
+			"settings":
+			{
+				"buffer_size": 1053,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "using UnityEngine;\nusing System.Collections;\n\npublic class StartUp : MonoBehaviour {\n\n    public GameObject Prefab;\n    private GameObject[] Generator_main;\n    private Vector2 Base_position;\n    private float Z_position;\n\n\t// Use this for initialization\n\tvoid Start () {\n        Generator_main = new GameObject[42];\n        Base_position = new Vector2(-0.135f, -0.085f);\n        switch(Prefab.gameObject.tag){\n            case \"Mud\":\n                Z_position = 0.0f;\n                break;\n            case \"Jewely\":\n                Z_position = 0.1f;\n                break;\n            case \"Sand\":\n                Z_position = 0.2f;\n                break;\n            case \"Stone_b\":\n                Z_position = 0.3f;\n                break;\n            case \"Stone\":\n                Z_position = 0.4f;\n                break;\n        }\n        for(int n = 0; n < 6; n++){\n            for(int i = 0; i < 7; i++){\n                Generator_main[i] = Instantiate(Prefab) as GameObject;\n                Generator_main[i].transform.position = new Vector3(Base_position.x + i*0.03f ,Base_position.y + n*0.03f, -Z_position);\n                Generator_main[i].name = Generator_main[i].name + n.ToString() + i.ToString();\n            }\n        }\n\t}\n\n\t// Update is called once per frame\n\tvoid Update () {\n\n\t}\n}\n",
+			"file": "Assets/Script/StartUp.cs",
+			"file_size": 1309,
+			"file_write_time": 131216863968294572,
+			"settings":
+			{
+				"buffer_size": 1306,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/Controller_UI/isPickaxeUI.cs",
+			"settings":
+			{
+				"buffer_size": 349,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/Controller_UI/isHammerUI.cs",
+			"settings":
+			{
+				"buffer_size": 206,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/HummerController.cs",
+			"settings":
+			{
+				"buffer_size": 441,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 140.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 410.0
+	},
+	"console":
+	{
+		"height": 763.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0';pf = 'Package Control.sublime-package';ipp = sublime.installed_packages_path();urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(' ', '%20')).read();dh = hashlib.sha256(by).hexdigest();print( 'Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0';pf = 'Package Control.sublime-package';ipp = sublime.installed_packages_path();urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(' ', '%20')).read();dh = hashlib.sha256(by).hexdigest();print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(' ', '%20')).read();",
+			"urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );",
+			"ipp = sublime.installed_packages_path();",
+			"pf = 'Package Control.sublime-package';",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0';",
+			"import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0’; pf = 'Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(’ ’, ’%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb’ ).write(by)",
+			"import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0’; pf = 'Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(’ ’, ’%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb’ ).write(by)import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0’; pf = 'Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(’ ’, ’%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb’ ).write(by)",
+			"print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest();",
+			"urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );",
+			"pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path();",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88';",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"os",
+			"import urllib.request",
+			"import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0’; pf = 'Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(’ ’, ’%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb’ ).write(by)",
+			"import urllib.request,os,hashlib; h = "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Unity/Lab_2D Dig game",
+		"/C/Unity/Lab_2D Dig game/Assets",
+		"/C/Unity/Lab_2D Dig game/Assets/Script"
+	],
+	"file_history":
+	[
+		"/C/Unity/Lab_2D Dig game/Assets/Script/PlayGame.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/find_gameobject.cs",
+		"/C/Unity/Study_GoForwardUnityChan/Assets/UnityChanController.cs",
+		"/C/Unity/Study_GoForwardUnityChan/Assets/CubeController.cs",
+		"/C/Unity/Study_GoForwardUnityChan/Assets/CubeGenerator.cs",
+		"/C/Unity/Study_GoForwardUnityChan/Assets/CubeSEController.cs",
+		"/C/Unity/Study_GoForwardUnityChan/Assets/BackgroundController.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/DurableValueController.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/StartUp.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/MousePositionManager.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/HummerController.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/HummerController.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/GameScene.meta",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Sand_Generator.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/HanmerController.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/InstantiateStand.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/NewBehaviourScript.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/InstantiateSand.cs",
+		"/C/Unity/Lab_2D Dig game/Assets/Script/InstantiateSand.cs",
+		"/C/Unity/Study_MecanimTest/Assets/UnityChanController.cs",
+		"/C/Unity/Study_MecanimTest/project.sublime-project",
+		"/C/Unity/Stady_2d-shooting-game-master/project.sublime-project",
+		"/C/Unity/Project_horror game/Assets/script/Collider_test.cs",
+		"/C/Unity/sublime_text_in_unity.sublime-project",
+		"/C/Unity/Stady_2d-shooting-game-master/progect.sublime-project",
+		"/C/Unity/Project_horror game/horror.sublime-project",
+		"/C/Unity/Lab_door/Assets/suraidodoayoko.cs",
+		"/C/Unity/Stady_2d-shooting-game-master/2d-shooting-game-master.sln",
+		"/C/Unity/Project_horror game/Assets/EasyRoads3D Free/Release Notes.txt",
+		"/C/Unity/Project_horror game/Assets/EasyRoads3D Free/Editor/RoadObjectEditorScript.js",
+		"/C/Unity/Project_horror game/Assets/EasyRoads3D Free/_manual.html",
+		"/C/Unity/Project_horror game/Assets/EasyRoads3D Free/_readme.txt",
+		"/C/Unity/Lab_horror/Assets/download/RoadKit/MouseOrbit.js",
+		"/C/Unity/2d-shooting-game-master/Assets/Scripts/Spaceship.cs",
+		"/C/Unity/Lab_horror/Assets/Standard Assets/Vehicles/Car/Scripts/CarUserControl.cs",
+		"/C/Unity/Lab_horror/Assets/MasterCube/Script/MasterCube.cs",
+		"/C/Unity/Lab_horror/Assets/download/EasyRoads3D Free/_manual.html",
+		"/C/Unity/2d-shooting-game-master/2d-shooting.sublime-project",
+		"/C/Users/友槻/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/友槻/AppData/Roaming/Sublime Text 3/Packages/TrailingSpaces/trailing_spaces.sublime-settings",
+		"/C/Users/友槻/AppData/Roaming/Sublime Text 3/Packages/User/trailing_spaces.sublime-settings"
+	],
+	"find":
+	{
+		"height": 50.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"        // switch(Prefab.gameObject.tag){\n        //     case \"Mud\":\n        //         Z_position = 0.0f;\n        //         break;\n        //     case \"Jewely\":\n        //         Z_position = 0.1f;\n        //         break;\n        //     case \"Sand\":\n        //         Z_position = 0.2f;\n        //         break;\n        //     case \"Stone_b\":\n        //         Z_position = 0.3f;\n        //         break;\n        //     case \"Stone\":\n        //         Z_position = 0.4f;\n        //         break;\n        // }",
+			"Input",
+			"){\n",
+			"\n\t\t",
+			">()."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Assets/Script/MousePositionManager.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1872,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"287,297": "Method 'RayManager' can be made static.",
+								"317,322": "Convert to constant",
+								"33,38": "Using directive is not used by code and can be removed safely.",
+								"418,425": "Assignment is redundant",
+								"491,492": "Assignment is redundant",
+								"580,587": "Method 'RayTest' can be made static.",
+								"620,625": "Convert to constant",
+								"721,728": "Use 'var' keyword",
+								"794,795": "Assignment is redundant"
+							},
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 144.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Unity/Study_GoForwardUnityChan/Assets/UIController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								846,
+								858
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 576.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Script/StartUp.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1110,
+								1110
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"108,114": "'Prefab' should start with a lower case letter. (Rule 'Fields')",
+								"1189,1190": "Redundant ToString() call",
+								"1204,1205": "Redundant ToString() call",
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"972,973": "Type cast is redundant"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 438.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/Script/Controller_UI/isPickaxeUI.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 349,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								250,
+								250
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"238,247": "'isPickaxe' is not a known identifier",
+								"250,251": "Cannot convert from ? to isPickaxeUI"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Script/Controller_UI/isHammerUI.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/Script/HummerController.cs",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 50.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 132.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 317.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 96.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Unity\\Study_GoForwardUnityChan\\project.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 284.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

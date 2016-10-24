@@ -5,9 +5,13 @@ using System;
 
 public class toolPickaxe : MonoBehaviour {
 
+    private hitPoint def;
+
+    private int str;
+
 	// Use this for initialization
 	void Start () {
-
+        str = 5;
 	}
 
     public void OnMouseUp() {
@@ -20,7 +24,8 @@ public class toolPickaxe : MonoBehaviour {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector2 ray_position = (Vector2)ray.origin;
             RaycastHit2D hit = Physics2D.Raycast((Vector2)ray.origin, Vector2.zero, 1, layer);
-            Destroy(hit.collider.gameObject);
+            def = hit.collider.gameObject.GetComponent<hitPoint>();
+            def.attackTratum(str);
 
         }catch(NullReferenceException ex){
             Debug.Log("error");

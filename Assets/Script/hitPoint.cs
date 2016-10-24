@@ -8,6 +8,8 @@ public class hitPoint : MonoBehaviour {
     public int def;
     public int yen;
 
+    private bool trigger;
+
 	// Use this for initialization
 	void Start () {
         adder = GameObject.Find("Score").GetComponent<isScore>();
@@ -25,4 +27,36 @@ public class hitPoint : MonoBehaviour {
             Destroy(gameObject);
         }
     }
+
+    public void isPenalty(){
+        def--;
+        yen /= 2;
+        if(def < 0){
+            Destroy(gameObject);
+        }
+
+    }
+    public void getJewelry(){
+        adder.addScore(yen);
+        trigger = true;
+    }
+
+    public void isAnotherPenalty(){
+        def--;
+        yen /=2;
+        adder.getPenalty(yen.ToString());
+        if(def < 0){
+            Destroy(gameObject);
+        }
+    }
+
+    public void isPenaltyTrigger(){
+        if(trigger){
+            isAnotherPenalty();
+        }else{
+            isPenalty();
+        }
+
+    }
+
 }

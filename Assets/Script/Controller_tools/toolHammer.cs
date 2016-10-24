@@ -1,14 +1,18 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 
 public class toolHammer : MonoBehaviour {
 
+    private soundActive setAudio;
     private hitPoint def;
+    private hitPoint penalty;
 
     private int str;
 
     void Start(){
+        setAudio = GameObject.Find("isSE").GetComponent<soundActive>();
+
         str = 2;
     }
 
@@ -24,26 +28,35 @@ public class toolHammer : MonoBehaviour {
 
         try{
             hit = Physics2D.Raycast(new Vector2(ray_position.x + 0.015f, ray_position.y + 0.015f), Vector2.zero, 1, layer);
-            def = hit.collider.gameObject.GetComponent<hitPoint>();
-            def.attackTratum(str);
-        }catch(NullReferenceException ex){
-        }try{
+            playAction(hit);
+        }catch(NullReferenceException ex){}
+        try{
             hit = Physics2D.Raycast(new Vector2(ray_position.x + -0.015f, ray_position.y + 0.015f), Vector2.zero, 1, layer);
-            def = hit.collider.gameObject.GetComponent<hitPoint>();
-            def.attackTratum(str);
-        }catch(NullReferenceException ex){
-        }
+            playAction(hit);
+        }catch(NullReferenceException ex){}
         try{
             hit = Physics2D.Raycast(new Vector2(ray_position.x + 0.015f, ray_position.y + -0.015f), Vector2.zero, 1, layer);
-            def = hit.collider.gameObject.GetComponent<hitPoint>();
-            def.attackTratum(str);
-        }catch(NullReferenceException ex){
-        }
+            playAction(hit);
+        }catch(NullReferenceException ex){}
         try{
             hit = Physics2D.Raycast(new Vector2(ray_position.x + -0.015f, ray_position.y + -0.015f), Vector2.zero, 1, layer);
-            def = hit.collider.gameObject.GetComponent<hitPoint>();
+            playAction(hit);
+        }catch(NullReferenceException ex){}
+
+    }
+
+    private void playAction(RaycastHit2D ray){
+        if(ray.collider.gameObject.tag == "tagSand"
+            || ray.collider.gameObject.tag == "tagStone"){
+            setAudio.setActive(ray.collider.gameObject.tag);
+            def = ray.collider.gameObject.GetComponent<hitPoint>();
             def.attackTratum(str);
-        }catch(NullReferenceException ex){
+        }else{
+            if(ray.collider.gameObject.tag == "tagJewelry"){
+                penalty = ray.collider.gameObject.GetComponent<hitPoint>();
+                penalty.isPenaltyTrigger();
+            }
+
         }
 
     }

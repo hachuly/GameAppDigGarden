@@ -8,7 +8,6 @@ public class toolPickaxe : MonoBehaviour {
     private soundActive setAudio;
     private hitPoint def;
     private hitPoint penalty;
-    private findJewely isActive;
 
     private int str;
 
@@ -46,6 +45,7 @@ public class toolPickaxe : MonoBehaviour {
             def.attackTratum(str);
         }else{
             if(ray.collider.gameObject.tag == "tagJewelry"){
+                setAudio.setActive(ray.collider.gameObject.tag);
                 penalty = ray.collider.gameObject.GetComponent<hitPoint>();
                 penalty.isPenaltyTrigger();
             }

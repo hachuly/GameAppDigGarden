@@ -43,6 +43,8 @@ public class toolHammer : MonoBehaviour {
             playAction(hit);
         }catch(NullReferenceException ex){}
 
+
+
     }
 
     private void playAction(RaycastHit2D ray){
@@ -53,6 +55,7 @@ public class toolHammer : MonoBehaviour {
             def.attackTratum(str);
         }else{
             if(ray.collider.gameObject.tag == "tagJewelry"){
+                setAudio.setActive(ray.collider.gameObject.tag);
                 penalty = ray.collider.gameObject.GetComponent<hitPoint>();
                 penalty.isPenaltyTrigger();
             }

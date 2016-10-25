@@ -5,11 +5,13 @@ public class findJewely : MonoBehaviour {
 
     private hitPoint isJewelry;
 
+    private soundActive setAudio;
     private bool trigger;
 
 	// Use this for initialization
 	void Start () {
         isJewelry = gameObject.GetComponent<hitPoint>();
+        setAudio = GameObject.Find("isSE").GetComponent<soundActive>();
         trigger = true;
 	}
 
@@ -37,6 +39,7 @@ public class findJewely : MonoBehaviour {
         ){
             isJewelry.getJewelry();
             trigger = false;
+            setAudio.setActive(gameObject.tag);
         }
     }
 }

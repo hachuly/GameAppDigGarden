@@ -4,6 +4,9 @@ using System.Collections;
 
 public class isTimer : MonoBehaviour {
 
+    private isResult show;
+
+    private GameObject result;
     private GameObject timer;
     private int d_ff;
     private int setTime;
@@ -13,9 +16,13 @@ public class isTimer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        show = GameObject.Find("textScore").GetComponent<isResult>();
+        result = GameObject.Find("Result");
+        result.SetActive(false);
         timer = gameObject;
         d_ff = 0;
         setTime = 1;
+        stop = true;
     }
 
 	// Update is called once per frame
@@ -38,6 +45,8 @@ public class isTimer : MonoBehaviour {
         timer.GetComponent<Text>().text = setMinutes() + ":" + setSeconds(i) ;
         if(seconds == 0 && minutes == 0){
             stop = false;
+            result.SetActive(true);
+            show.getScone();
         }
     }
 

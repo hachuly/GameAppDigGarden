@@ -3,6 +3,7 @@ using System.Collections;
 
 public class hitPoint : MonoBehaviour {
 
+    private nextWave end;
     private isScore adder;
 
     public int def;
@@ -13,6 +14,7 @@ public class hitPoint : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         adder = GameObject.Find("Score").GetComponent<isScore>();
+        end = GameObject.Find("Script_StratumManager").GetComponent<nextWave>();
 	}
 
 	// Update is called once per frame
@@ -33,12 +35,14 @@ public class hitPoint : MonoBehaviour {
         yen /= 2;
         if(def < 0){
             Destroy(gameObject);
+            end.reset();
         }
 
     }
     public void getJewelry(){
         adder.addScore(yen);
         trigger = true;
+        end.reset();
     }
 
     public void isAnotherPenalty(){
@@ -47,6 +51,7 @@ public class hitPoint : MonoBehaviour {
         adder.getPenalty(yen.ToString());
         if(def < 0){
             Destroy(gameObject);
+            end.reset();
         }
     }
 

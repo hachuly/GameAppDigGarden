@@ -60,4 +60,8 @@ public class isScore : MonoBehaviour {
 
     }
 
+    public string inYen(){
+        return  setYen(g_yen) + ","+ setYen(m_yen) +","+ setYen(k_yen) +","+ setYen(c_yen)+"yen";
+    }
+
 }

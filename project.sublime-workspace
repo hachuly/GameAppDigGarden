@@ -4,36 +4,140 @@
 		"selected_items":
 		[
 			[
-				"st",
-				"str\tint"
+				"o",
+				"obj\tGameObject"
 			],
 			[
-				"is",
-				"isScore\tisScore"
+				"game",
+				"gameObject\tGameObject { get; }"
 			],
 			[
 				"ga",
-				"GameObject\tGameObject"
+				"gameObject\tGameObject { get; }"
+			],
+			[
+				"fo",
+				"foreach\tforeach"
+			],
+			[
+				"obj",
+				"object\tobject"
+			],
+			[
+				"Null",
+				"NullReferenceException\tNullReferenceException"
+			],
+			[
+				"sound",
+				"soundJewelry\tGameObject"
+			],
+			[
+				"play",
+				"playJewelry\tAudioSource"
+			],
+			[
+				"Au",
+				"AudioSource\tAudioSource"
+			],
+			[
+				"reset",
+				"resetter\tGameObject[]"
+			],
+			[
+				"re",
+				"resetter\tGameObject[]"
+			],
+			[
+				"ge",
+				"Generator\tGameObject"
+			],
+			[
+				"In",
+				"Instantiate(Object original)\tObject"
+			],
+			[
+				"is",
+				"isJewelry\thitPoint"
+			],
+			[
+				"ray",
+				"rayJewelry()\tvoid"
+			],
+			[
+				"hit",
+				"hitPoint\thitPoint"
+			],
+			[
+				"find",
+				"findJewely\tfindJewely"
+			],
+			[
+				"get",
+				"GetComponent<T>()\tT"
+			],
+			[
+				"pe",
+				"isPenalty()\tvoid"
+			],
+			[
+				"c",
+				"collider\tCollider2D { get; }"
+			],
+			[
+				"ca",
+				"catch\tcatch"
+			],
+			[
+				"ra",
+				"Ray()\tRay()"
 			],
 			[
 				"i",
 				"i\tint"
 			],
 			[
-				"de",
-				"Debug\tDebug"
+				"soun",
+				"soundStone\tGameObject"
 			],
 			[
-				"ra",
-				"Range(int min, int max)\tint"
-			],
-			[
-				"re",
-				"return\treturn"
+				"s",
+				"setActive(string tag)\tvoid"
 			],
 			[
 				"p",
-				"public\tpublic"
+				"playStone\tAudioSource"
+			],
+			[
+				"pla",
+				"playSand\tAudioSource"
+			],
+			[
+				"Play",
+				"PlayOneShot(AudioClip clip)\tvoid"
+			],
+			[
+				"audio",
+				"AudioClip\tAudioClip"
+			],
+			[
+				"b",
+				"break\tbreak"
+			],
+			[
+				"au",
+				"AudioSource\tAudioSource"
+			],
+			[
+				"Collisio",
+				"Collision2D\tCollision2D"
+			],
+			[
+				"st",
+				"str\tint"
+			],
+			[
+				"de",
+				"Debug\tDebug"
 			],
 			[
 				"sta",
@@ -64,16 +168,8 @@
 				"Vector2\tVector2"
 			],
 			[
-				"ray",
-				"Raycast(Vector2 origin, Vector2 direction)\tRaycastHit2D"
-			],
-			[
 				"rayca",
 				"RaycastHit2D\tRaycastHit2D"
-			],
-			[
-				"c",
-				"collider\tCollider2D { get; }"
 			],
 			[
 				"log",
@@ -100,10 +196,6 @@
 				"Collision2D\tCollision2D"
 			],
 			[
-				"game",
-				"gameObject\tGameObject { get; }"
-			],
-			[
 				"in",
 				"identity\tQuaternion { get; }"
 			],
@@ -116,10 +208,6 @@
 				"mouse_position\tVector2"
 			],
 			[
-				"get",
-				"GetComponent<T>()\tT"
-			],
-			[
 				"Colli",
 				"Collider2D\tCollider2D"
 			],
@@ -130,10 +218,6 @@
 			[
 				"instati",
 				"Instantiate(Object original)\tObject"
-			],
-			[
-				"o",
-				"Obj_sand\tGameObject"
 			],
 			[
 				"lo",
@@ -186,20 +270,25 @@
 			[
 				"Spa",
 				"Spaceship\tSpaceship"
-			],
-			[
-				"s",
-				"spaceship\tSpaceship"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "Assets/Script/soundActive.cs",
+			"settings":
+			{
+				"buffer_size": 1384,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "Assets/Script/Controller_tools/toolPickaxe.cs",
 			"settings":
 			{
-				"buffer_size": 774,
+				"buffer_size": 1414,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Unix"
 			}
@@ -208,17 +297,8 @@
 			"file": "Assets/Script/Controller_tools/toolHammer.cs",
 			"settings":
 			{
-				"buffer_size": 1628,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Script/Controller_tools/toolActive.cs",
-			"settings":
-			{
-				"buffer_size": 1783,
-				"encoding": "UTF-8 with BOM",
+				"buffer_size": 2060,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -226,8 +306,17 @@
 			"file": "Assets/Script/hitPoint.cs",
 			"settings":
 			{
-				"buffer_size": 498,
+				"buffer_size": 1255,
 				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/Controller_UI/isTimer.cs",
+			"settings":
+			{
+				"buffer_size": 1381,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -235,7 +324,43 @@
 			"file": "Assets/Script/Controller_UI/isScore.cs",
 			"settings":
 			{
-				"buffer_size": 413,
+				"buffer_size": 1426,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/findJewely.cs",
+			"settings":
+			{
+				"buffer_size": 1456,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/StartUp.cs",
+			"settings":
+			{
+				"buffer_size": 3711,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/setParent.cs",
+			"settings":
+			{
+				"buffer_size": 379,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/isDestroy.cs",
+			"settings":
+			{
+				"buffer_size": 549,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Unix"
 			}
@@ -305,13 +430,14 @@
 	],
 	"file_history":
 	[
+		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/toolActive.cs",
+		"/C/Unity/Study_GoForwardUnityChan/Assets/CubeSEController.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/toolHammer.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/isHammerUI.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/isPickaxeUI.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/isToolsUI.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_UI/isTimer.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/toolPickaxe.cs",
-		"/C/Unity/Lab_2D Dig game/Assets/Script/Controller_tools/toolActive.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/StartUp.cs",
 		"/C/Unity/Study_GoForwardUnityChan/Assets/UIController.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/MousePositionManager.cs",
@@ -320,7 +446,6 @@
 		"/C/Unity/Study_GoForwardUnityChan/Assets/UnityChanController.cs",
 		"/C/Unity/Study_GoForwardUnityChan/Assets/CubeController.cs",
 		"/C/Unity/Study_GoForwardUnityChan/Assets/CubeGenerator.cs",
-		"/C/Unity/Study_GoForwardUnityChan/Assets/CubeSEController.cs",
 		"/C/Unity/Study_GoForwardUnityChan/Assets/BackgroundController.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/DurableValueController.cs",
 		"/C/Unity/Lab_2D Dig game/Assets/Script/HummerController.cs",
@@ -395,24 +520,57 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Assets/Script/Controller_tools/toolPickaxe.cs",
+					"file": "Assets/Script/soundActive.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 774,
+						"buffer_size": 1384,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								130,
-								130
+								207,
+								207
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"oops":
+							{
+								"219,229": "Unexpected symbol `;'' in class, struct, or interface member declaration"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Script/Controller_tools/toolPickaxe.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1414,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1259,
+								1259
 							]
 						],
 						"settings":
@@ -421,8 +579,8 @@
 							"oops":
 							{
 								"19,24": "Using directive is not used by code and can be removed safely.",
-								"336,341": "Convert to constant",
-								"437,444": "Use 'var' keyword",
+								"456,461": "Convert to constant",
+								"549,556": "Assignment is redundant",
 								"74,85": "'toolPickaxe' should start with an upper case letter. (Rule 'Types')"
 							},
 							"syntax": "Packages/C#/C#.sublime-syntax",
@@ -430,36 +588,37 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 720.0,
+						"translation.y": 1288.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "Assets/Script/Controller_tools/toolHammer.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1628,
+						"buffer_size": 2060,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								587,
-								587
+								1904,
+								1904
 							]
 						],
 						"settings":
 						{
+							"is_init_dirty_state": true,
 							"oops":
 							{
-								"287,292": "Convert to constant",
 								"33,38": "Using directive is not used by code and can be removed safely.",
-								"380,387": "Use 'var' keyword",
+								"424,429": "Convert to constant",
+								"517,524": "Use 'var' keyword",
 								"73,83": "'toolHammer' should start with an upper case letter. (Rule 'Types')"
 							},
 							"syntax": "Packages/C#/C#.sublime-syntax",
@@ -467,38 +626,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 864.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Assets/Script/Controller_tools/toolActive.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1783,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"is_init_dirty_state": false,
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 192.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -510,15 +638,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 498,
+						"buffer_size": 1255,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								204,
-								204
+								1088,
+								1088
 							]
 						],
 						"settings":
@@ -526,36 +654,245 @@
 							"is_init_dirty_state": false,
 							"oops":
 							{
-								"130,133": "Name should have prefix '_'. (Rule 'Fields').",
-								"150,153": "Name should have prefix '_'. (Rule 'Fields').",
+								"1122,1138": "'isPenaltyTrigger' should start with an upper case letter. (Rule 'Methods')",
+								"156,159": "Name should have prefix '_'. (Rule 'Fields').",
+								"176,179": "Name should have prefix '_'. (Rule 'Fields').",
 								"19,24": "Using directive is not used by code and can be removed safely.",
-								"350,362": "'attackTratum' should start with an upper case letter. (Rule 'Methods')",
-								"59,67": "'hitPoint' should start with an upper case letter. (Rule 'Types')"
+								"484,496": "'attackTratum' should start with an upper case letter. (Rule 'Methods')",
+								"59,67": "'hitPoint' should start with an upper case letter. (Rule 'Types')",
+								"647,656": "'isPenalty' should start with an upper case letter. (Rule 'Methods')",
+								"805,815": "'getJewelry' should start with an upper case letter. (Rule 'Methods')",
+								"916,932": "'isAnotherPenalty' should start with an upper case letter. (Rule 'Methods')"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1794.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Script/Controller_UI/isTimer.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								393,
+								393
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"oops":
+							{
+								"1076,1083": "Redundant ToString() call",
+								"1306,1313": "Redundant ToString() call",
+								"200,207": "Name should have prefix '_'. (Rule 'Fields').",
+								"224,231": "Name should have prefix '_'. (Rule 'Fields').",
+								"41,46": "Using directive is not used by code and can be removed safely.",
+								"507,514": "Parameter can be IComparable",
+								"701,709": "'setTimer' should start with an upper case letter. (Rule 'Methods')",
+								"805,807": "Convert to '&=' expresssion",
+								"81,88": "'isTimer' should start with an upper case letter. (Rule 'Types')"
+							},
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 184.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/Script/Controller_UI/isScore.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1426,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								496,
+								496
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"oops":
+							{
+								"41,46": "Using directive is not used by code and can be removed safely.",
+								"460,468": "'addScore' should start with an upper case letter. (Rule 'Methods')",
+								"81,88": "'isScore' should start with an upper case letter. (Rule 'Types')",
+								"840,844": "Redundant 'else' keyword",
+								"939,949": "'getPenalty' should start with an upper case letter. (Rule 'Methods')"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 690.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/Script/findJewely.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								382,
+								382
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"oops":
+							{
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"404,414": "'rayJewelry' should start with an upper case letter. (Rule 'Methods')",
+								"430,435": "Convert to constant",
+								"454,457": "Use 'var' keyword",
+								"520,527": "Use 'var' keyword",
+								"572,584": "Use 'var' keyword",
+								"59,69": "'findJewely' should start with an upper case letter. (Rule 'Types')"
 							},
 							"syntax": "Packages/C#/C#.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 288.0,
+						"translation.y": 736.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Assets/Script/StartUp.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1268,
+								1268
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"1188,1189": "Type cast is redundant",
+								"139,145": "'Prefab' should start with a lower case letter. (Rule 'Fields')",
+								"1421,1422": "Redundant ToString() call",
+								"1436,1437": "Redundant ToString() call",
+								"1632,1634": "Convert to 'switch' statement",
+								"1895,1896": "Type cast is redundant",
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"2420,2421": "Type cast is redundant",
+								"2886,2887": "Type cast is redundant",
+								"3293,3294": "Type cast is redundant",
+								"3518,3519": "Redundant ToString() call",
+								"3533,3534": "Redundant ToString() call"
+							},
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1380.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "Assets/Script/Controller_UI/isScore.cs",
+					"buffer": 8,
+					"file": "Assets/Script/setParent.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 413,
+						"buffer_size": 379,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								40,
-								40
+								325,
+								325
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"198,204": "Method 'Update' has the same with 'Start'",
+								"231,238": "'setting' should start with an upper case letter. (Rule 'Methods')",
+								"33,38": "Using directive is not used by code and can be removed safely.",
+								"73,82": "'setParent' should start with an upper case letter. (Rule 'Types')"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 276.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Assets/Script/isDestroy.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								538,
+								538
 							]
 						],
 						"settings":
@@ -563,22 +900,17 @@
 							"is_init_dirty_state": false,
 							"oops":
 							{
-								"194,198": "'this.' is redundant and can be removed safely.",
-								"296,304": "'addScore' should start with an upper case letter. (Rule 'Methods')",
-								"309,310": "Parameter 'i' is never used",
-								"337,346": "'showScore' should start with an upper case letter. (Rule 'Methods')",
-								"351,352": "Parameter 'i' is never used",
-								"363,367": "'this.' is redundant and can be removed safely.",
-								"41,46": "Using directive is not used by code and can be removed safely.",
-								"81,88": "'isScore' should start with an upper case letter. (Rule 'Types')"
+								"184,190": "Method 'Update' has the same with 'Start'",
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"59,68": "'isDestroy' should start with an upper case letter. (Rule 'Types')"
 							},
 							"syntax": "Packages/C#/C#.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 96.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
